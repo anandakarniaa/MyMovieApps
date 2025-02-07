@@ -9,12 +9,12 @@ plugins {
 apply from: '../shared_dependencies.gradle'
 android {
     namespace 'com.ana.mymovieapps'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.ana.mymovieapps"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
