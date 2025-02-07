@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyMovieApps</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="tambahkan_favorite">Tambahkan Favorite</string>
+    <string name="remove_favorite">Hapus Favorite</string>
+    <string name="add_favorite">Tambah Favorite</string>
+</resources>
