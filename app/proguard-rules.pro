@@ -91,7 +91,7 @@
 -keep,includedescriptorclasses class net.sqlcipher.** { *; }
 -keep,includedescriptorclasses interface net.sqlcipher.** { *; }
 
--keep class com.herupray.myapplication.** { *; }
+-keep class com.ana.mymovieapps.** { *; }
 -keep class androidx.** { *; }
 -dontwarn android.support.**
 
