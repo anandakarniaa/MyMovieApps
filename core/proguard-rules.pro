@@ -62,3 +62,4 @@
 -keepclassmembers class com.ana.core.** {
     *;
 }
+-keep class com.ana.core.data.source.remote.network.ApiResponse { *; }
