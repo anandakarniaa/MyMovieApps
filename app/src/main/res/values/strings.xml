@@ -4,4 +4,5 @@
     <string name="tambahkan_favorite">Tambahkan Favorite</string>
     <string name="remove_favorite">Hapus Favorite</string>
     <string name="add_favorite">Tambah Favorite</string>
+    <string name="image">IMAGE</string>
 </resources>

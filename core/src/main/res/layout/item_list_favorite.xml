@@ -33,7 +33,8 @@
                 android:layout_height="match_parent"
                 android:clipToOutline="true"
                 android:scaleType="centerCrop"
-                tools:src="@tools:sample/avatars"/>
+                tools:src="@tools:sample/avatars"
+                android:contentDescription="@string/image" />
         </androidx.cardview.widget.CardView>
 
         <com.google.android.material.textview.MaterialTextView

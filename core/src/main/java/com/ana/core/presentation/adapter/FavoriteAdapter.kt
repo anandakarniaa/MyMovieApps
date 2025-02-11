@@ -1,5 +1,6 @@
 package com.ana.core.presentation.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.RemoteViews.RemoteCollectionItems
@@ -13,6 +14,7 @@ class FavoriteAdapter(private val itemClick: (Movie) -> Unit) :
 
         private var items: MutableList<Movie> = mutableListOf()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setItems(item: List<Movie>){
         this.items.clear()
         this.items.addAll(item)

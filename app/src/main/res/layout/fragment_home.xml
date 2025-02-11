@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:padding="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/background"
     tools:context=".presentation.home.HomeFragment">
 
     <TextView
@@ -26,7 +25,8 @@
         android:src="@drawable/baseline_favorite_24"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:tint="@color/red" />
+        app:tint="@color/red"
+        android:contentDescription="@string/image" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMovie"

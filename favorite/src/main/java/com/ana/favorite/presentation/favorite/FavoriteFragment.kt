@@ -93,6 +93,7 @@ class FavoriteFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        binding.rvFav.adapter = null
         _binding = null
     }
 

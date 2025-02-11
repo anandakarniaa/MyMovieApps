@@ -1,5 +1,6 @@
 package com.ana.core.presentation.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.webkit.WebChromeClient
@@ -14,6 +15,7 @@ class MovieTrailerAdapter(private val itemClick: (MovieTrailer) -> Unit) :
 
     private var items: MutableList<MovieTrailer> = mutableListOf()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setItems(items: List<MovieTrailer>) {
         this.items.clear()
         this.items.addAll(items)
