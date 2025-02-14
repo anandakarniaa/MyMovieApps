@@ -63,5 +63,5 @@
     *;
 }
 -keep class com.ana.core.data.source.remote.network.ApiResponse { *; }
-
 -dontwarn com.ana.core.data.source.remote.network.ApiResponse
+-keep class com.ana.core.data.source.remote.network.** { *; }
