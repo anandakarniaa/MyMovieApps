@@ -137,7 +137,7 @@ jobs:
 #      tambahkan eksplisit ksp
       - run:
           name: Generate KSP Files
-          command: ./gradlew kspKotlin
+          command: ./gradlew kspDebugKotlin kspReleaseKotlin
 
 #      tambahkan
       - run:
