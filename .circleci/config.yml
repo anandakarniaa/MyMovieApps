@@ -134,6 +134,15 @@ jobs:
       - run:
           name: Chmod permissions
           command: chmod +x ./gradlew && ls -l ./gradlew
+#      tambahkan eksplisit ksp
+      - run:
+          name: Generate KSP Files
+          command: ./gradlew kspKotlin
+
+#      tambahkan
+      - run:
+          name: Install SDK Build Tools 33.0.2
+          command: sdkmanager "build-tools;33.0.2"
 
       - run:
           name: Clean project
@@ -165,3 +174,4 @@ jobs:
 
       - store_test_results:
           path: app/build/test-results
+
