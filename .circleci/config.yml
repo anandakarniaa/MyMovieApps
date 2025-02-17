@@ -138,8 +138,18 @@ jobs:
       - run:
           name: Generate KSP Files
           command: ./gradlew kspDebugKotlin kspReleaseKotlin kspDebugUnitTestKotlin kspReleaseUnitTestKotlin
+      - run:
+          name: Update KSP
+          command: ./gradlew kspDebugKotlin kspReleaseKotlin --no-daemon
 
-#      tambahkan
+      - run:
+          name: Install SDK Build Tools 34.0.0
+          command: sdkmanager "build-tools;34.0.0"
+
+      - run:
+          name: Debug ProGuard
+          command: ./gradlew assembleRelease --stacktrace --info --no-daemon
+      #      tambahkan
       - run:
           name: Install SDK Build Tools 33.0.2
           command: sdkmanager "build-tools;33.0.2"
