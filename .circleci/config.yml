@@ -128,7 +128,7 @@ jobs:
 
       - restore_cache:
           keys:
-            - android-proguard-cache-{{ .Branch }}-{{ checksum "app/proguard-rules.pro" }}
+#            - android-proguard-cache-{{ .Branch }}-{{ checksum "app/proguard-rules.pro" }}
             - android-proguard-cache-
 
       - run:
