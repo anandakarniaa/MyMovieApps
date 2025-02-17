@@ -170,9 +170,9 @@ jobs:
             - app/build/intermediates
           key: android-proguard-cache-{{ .Branch }}-{{ checksum "app/proguard-rules.pro" }}
 
-      - run:
-          name: Build with ProGuard
-          command: ./gradlew assembleRelease --no-daemon --stacktrace --info
+#      - run:
+#          name: Build with ProGuard
+#          command: ./gradlew assembleRelease --no-daemon --stacktrace --info
 
       - store_artifacts:
           path: app/build/outputs
