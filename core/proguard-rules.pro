@@ -21,8 +21,8 @@
 -keep,allowobfuscation,allowshrinking class com.google.gson.reflect.TypeToken
 -keep,allowobfuscation,allowshrinking class * extends com.google.gson.reflect.TypeToken
 
--keep class com.rogo.core.** {*;}
--dontwarn com.rogo.core.**
+-keep class com.ana.core.** {*;}
+-dontwarn com.ana.core.**
 -keepattributes Exceptions, Signature, InnerClasses
 
 
