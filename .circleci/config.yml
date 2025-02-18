@@ -96,5 +96,3 @@ jobs:
       - store_artifacts:
           path: app/build/outputs/apk/release/
           destination: artifact-file-release
-
-
