@@ -77,11 +77,10 @@
 -keep class com.bumptech.glide.load.data.ParcelFileDescriptorRewinder$InternalRewinder {
   *** rewind();
 }
--keep class com.ana.core.data.source.remote.network.ApiResponse { *; }
+
 # Uncomment for DexGuard only
 #-keepresourcexmlelements manifest/application/meta-data@value=GlideModule
--dontoptimize
--dontobfuscate
+
 -dontobfuscate
 ##---------------Begin: proguard configuration for RxJava  ----------
 # Uncomment if you use RxJava

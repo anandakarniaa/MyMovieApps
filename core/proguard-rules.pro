@@ -62,13 +62,3 @@
 -keepclassmembers class com.ana.core.** {
     *;
 }
--keepattributes InnerClasses, EnclosingMethod, Signature
--keep class com.ana.core.data.source.remote.network.ApiResponse { *; }
--dontwarn com.ana.core.data.source.remote.network.ApiResponse
--keep class com.ana.core.data.source.remote.network.** { *; }
--keep class com.ana.core.data.source.remote.network.ApiResponse$* { *; }
--keepattributes InnerClasses
--keepattributes EnclosingMethod
--keep class com.android.tools.** { *; }
--dontwarn com.android.tools.**
--keepattributes Exceptions,InnerClasses,Signature,Deprecated
